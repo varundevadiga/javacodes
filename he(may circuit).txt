@@ -1,0 +1,51 @@
+Factorial equations
+Max. Marks: 100
+
+You are given two numbers
+and . Your task is to find the last digit of the following equation: 
+X^(n!%10)
+Input format
+
+The first line contains two integers
+and
+
+.
+
+Output format
+
+Print the last digit of the given equation.
+
+Constraints
+
+SAMPLE INPUT
+
+5 2
+
+SAMPLE OUTPUT
+
+5
+
+Explanation
+
+factorial of (2) is 2*1=2  ,So 5^2=25 the last digit in 25 is 5
+
+
+
+
+
+
+
+
+
+x,n=map(int,input().split())
+if n==0 or n==1:
+    t=1
+elif n==2:
+    t=2
+elif n==3:
+    t=6
+elif n==4:
+    t=4
+else:
+     t=0
+print(pow(x,t)%10)
